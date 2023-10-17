@@ -12,11 +12,9 @@ import {
 } from "antd";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import styled from "styled-components";
-import item1 from "images/p-1.jpg";
-// import b1 from "images/banner-1.jpg";
-// import b4 from "images/banner-4.jpg";
 import Meta from "antd/es/card/Meta";
 import { Link } from "react-router-dom";
+import { info } from "../../../../../root/axios/config";
 interface IProductProps {}
 
 const _Product = styled.div`
@@ -128,7 +126,7 @@ export const ProductComponent = (
 
   return (
     <_Product>
-      {/* <Form>
+       <Form>
         <Row
           gutter={3}
           style={{ background: "rgb(178, 61, 60)", marginTop: 10 }}
@@ -148,7 +146,7 @@ export const ProductComponent = (
             >
               <Card bodyStyle={{ padding: 5, margin: 5 }} loading={false}>
                 <Meta
-                  avatar={<Avatar size={100} src={item1} />}
+                  avatar={<Avatar size={100} src={info.p1} />}
                   title={
                     <>
                       <Link to="#">
@@ -189,7 +187,7 @@ export const ProductComponent = (
             >
               <Card bodyStyle={{ padding: 5, margin: 5 }} loading={false}>
                 <Meta
-                  avatar={<Avatar size={100} src={item1} />}
+                avatar={<Avatar size={100} src={info.p2} />}
                   title={
                     <>
                       <Link to="#">
@@ -225,7 +223,7 @@ export const ProductComponent = (
             </Col>
           </Row>
         </div>
-      </Form> */}
+      </Form>
     </_Product>
   );
 };

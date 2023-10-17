@@ -1,11 +1,9 @@
 import { Card, Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-// import p1 from "images/1.png";
-// import p2 from "images/2.jpg";
-// import p3 from "images/3.jpg";
 import { useSelector, useDispatch } from "react-redux";
 import { GETBANNER } from "../../store/actions";
+import { info } from "../../../../../root/axios/config";
 
 interface IPostProps {}
 const _Post = styled.div`
@@ -36,13 +34,13 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
   const onClick = () => {};
   return (
     <_Post>
-      {/* <Row gutter={[16, 16]}>
+       <Row gutter={[16, 16]}>
         <Col span={8}>
           <Card
             title=""
             onClick={onClick}
-            bordered={false}
-            cover={<img alt="example" src={p1} />}
+                      bordered={false}
+                      cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -51,7 +49,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+                      cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -60,7 +58,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+                      cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
@@ -69,7 +67,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p1} />}
+            cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -78,7 +76,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+            cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -87,7 +85,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+            cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
@@ -96,7 +94,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p1} />}
+            cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -105,7 +103,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+            cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -114,7 +112,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+            cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
@@ -123,7 +121,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p1} />}
+            cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -132,7 +130,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+            cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -141,7 +139,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+            cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
@@ -150,7 +148,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p1} />}
+            cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -159,7 +157,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+            cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -168,7 +166,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+            cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
@@ -177,7 +175,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p1} />}
+            cover={<img alt="example" src={info.post1} />}
           >
             Card content
           </Card>
@@ -186,7 +184,7 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p2} />}
+            cover={<img alt="example" src={info.post2} />}
           >
             Card content
           </Card>
@@ -195,12 +193,12 @@ export const PostComponent = (props: React.PropsWithChildren<IPostProps>) => {
           <Card
             title=""
             bordered={false}
-            cover={<img alt="example" src={p3} />}
+            cover={<img alt="example" src={info.post3} />}
           >
             Card content
           </Card>
         </Col>
-      </Row> */}
+      </Row>
     </_Post>
   );
 };

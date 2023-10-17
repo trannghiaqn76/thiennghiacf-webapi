@@ -10,6 +10,7 @@ import styled from "styled-components";
 // import b1 from "images/banner-1.jpg";
 // import b4 from "images/banner-4.jpg";
 import { Link } from "react-router-dom";
+import { info } from "../../../../../root/axios/config";
 interface IProductProps {}
 
 const _Banner = styled.div`
@@ -116,8 +117,8 @@ const contentStyle: React.CSSProperties = {
 };
 
 export const BannerComponent = React.memo((props: React.PropsWithChildren<IProductProps>) => {
-  const {} = props;
-
+    const { } = props;
+    
   return (
     <_Banner>
       <Form>
@@ -127,18 +128,18 @@ export const BannerComponent = React.memo((props: React.PropsWithChildren<IProdu
               <div
                >
                 <div style={contentStyle}>
-                  <Link to="/profile">
-                     {/* <Image src={b1} style={{width:'100%'}} /> */}
-                     </Link>
+                <Link to="/profile">
+                    <Image src={info.bannerImage1} style={{ width: '100%' }} /> 
+                </Link>
                 </div>
 
               </div>
               <div
                >
                 <div style={contentStyle}>
-                  <Link to="/profile">
-                     {/* <Image src={b4} style={{width:'100%'}} /> */}
-                     </Link>
+                <Link to="/profile">
+                    <Image src={info.bannerImage1} style={{ width: '100%' }} />
+                </Link>
                 </div>
 
               </div>

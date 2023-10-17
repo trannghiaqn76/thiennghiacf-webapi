@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "images/logo-mini.png";
 import { Col, Row } from "antd";
+import { info } from "../../root/axios/config";
 
 const _Header = styled.div`
     display : flex ;
@@ -79,11 +79,10 @@ interface IDefaultLayoutHeaderProps {}
 export const DefaultLayoutHeader = (
   props: React.PropsWithChildren<IDefaultLayoutHeaderProps>
 ) => {
-  const {} = props;
+    const { } = props;
   return (
       <_Header>
-    KAKA
-      {/* <Row
+      <Row
         style={{
           margin: "auto",
           padding: "0px",
@@ -99,7 +98,7 @@ export const DefaultLayoutHeader = (
                 <img
                   style={{ width: 35 }}
                   className="logo"
-                  src={logo}
+                  src={info.pathimage}
                   alt="thiện nghĩa cf"
                 />
               </NavLink>
@@ -139,7 +138,7 @@ export const DefaultLayoutHeader = (
           </div>
         </Col>
         <Col span={12}></Col>
-      </Row> */}
+      </Row> 
     </_Header>
   );
 };
