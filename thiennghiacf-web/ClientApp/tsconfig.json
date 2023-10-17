@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "images/*": [
+                "images/*"
+            ]
+        },
+        "lib": [
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "jsx": "react",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "sourceMap": true,
+        "outDir": "build",
+        "strictNullChecks": true,
+        "target": "ES5",
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "incremental": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}

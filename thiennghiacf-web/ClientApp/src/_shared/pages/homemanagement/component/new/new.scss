@@ -1,0 +1,46 @@
+.home-scroll-left{
+    padding-top: 10px;
+    height: calc(100vh - 100px);
+    overflow:hidden;
+    .user-information{
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px;
+        width:100%;
+        img{
+        max-height: 32px;
+        max-width: 32px;
+        border-radius: 65px;
+        vertical-align: -6px;
+        }
+        svg{
+            font-size: 30px;
+            margin-left:1px;
+        }
+        .icon-faImages, .icon-faCoffee{
+            font-size: 25px;
+        }
+        span{    
+            font-size: 15px;
+            color: #4a5461;
+            vertical-align: 3px;
+            margin-left: 10px;
+            font-weight: 300;
+            font-family: inherit;
+        }
+    }
+
+    .user-information:hover{
+        background: #d1dbe8;
+        transition:0.3s;
+    }
+    //////////////////
+    /* màn hình tối thiểu 991px trở lên*/
+    @media (min-width: 991px) {
+
+    }
+    /* màn hình tối đa 991px trở xuống*/
+    @media (max-width: 991px) {
+        
+    }
+}

@@ -1,0 +1,27 @@
+html * {
+  font-size: 1em !important;
+  font-family: system-ui !important;
+}
+/* Scroll bar */
+
+#body-main {
+  padding: 0px;
+  background: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
