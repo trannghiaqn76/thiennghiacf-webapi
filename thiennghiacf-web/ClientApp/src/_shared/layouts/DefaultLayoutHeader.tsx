@@ -79,9 +79,9 @@ interface IDefaultLayoutHeaderProps {}
 export const DefaultLayoutHeader = (
   props: React.PropsWithChildren<IDefaultLayoutHeaderProps>
 ) => {
-    const { } = props;
+  const {} = props;
   return (
-      <_Header>
+    <_Header>
       <Row
         style={{
           margin: "auto",
@@ -110,27 +110,39 @@ export const DefaultLayoutHeader = (
         </Col>
         <Col span={12} style={{ margin: "auto", marginLeft: 0 }}>
           <div className="menu-2">
-            <li onClick={() => {}}>
+            <li
+              onClick={() => {
+                return;
+              }}
+            >
               <NavLink to="/" className="main-nav">
                 <span className="text-menu">TRANG CHỦ</span>
               </NavLink>
             </li>
-            <li onClick={() => {}}>
+            <li
+              onClick={() => {
+                return;
+              }}
+            >
               <NavLink to="/cong-dong" className="main-nav">
                 <span className="text-menu">CỘNG ĐỒNG</span>
               </NavLink>
             </li>
-            <li onClick={() => {}}>
+            <li
+              onClick={() => {
+                return;
+              }}
+            >
               <NavLink to="/tin-tuc" className="main-nav">
                 <span className="text-menu">TIN TỨC XÃ HỘI</span>
               </NavLink>
             </li>
-            <li onClick={() => {}}>
+            <li>
               <NavLink to="/tin-tuc" className="main-nav">
                 <span className="text-menu"> DỊCH VỤ TAXI</span>
               </NavLink>
             </li>
-            <li onClick={() => {}}>
+            <li>
               <NavLink to="/ve-chung-toi" className="main-nav">
                 <span className="text-menu">VỀ CHÚNG TÔI</span>
               </NavLink>
@@ -138,7 +150,7 @@ export const DefaultLayoutHeader = (
           </div>
         </Col>
         <Col span={12}></Col>
-      </Row> 
+      </Row>
     </_Header>
   );
 };

@@ -27,9 +27,9 @@ export const DefaultLayout = (
   return (
     <_DefaultLayout>
       <DefaultLayoutHeader />
-      <div style={{paddingLeft:5,paddingRight:5}}>
-          {<Outlet />}
-          {props?.main}
+      <div style={{ paddingLeft: 5, paddingRight: 5 }}>
+        {<Outlet />}
+        {props?.main}
       </div>
     </_DefaultLayout>
   );
