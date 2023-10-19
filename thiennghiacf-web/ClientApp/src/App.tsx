@@ -37,11 +37,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/ve-chung-toi",
-        element: <><AboutUsManagement/></>,
+        element: (
+          <>
+            <AboutUsManagement />
+          </>
+        ),
       },
       {
         path: "/cong-dong",
-        element: <><CommunityManagement/></>,
+        element: (
+          <>
+            <CommunityManagement />
+          </>
+        ),
         errorElement: (
           <DefaultLayout
             main={
@@ -54,7 +62,7 @@ const router = createBrowserRouter([
         children: [],
       },
     ],
-  }
+  },
 ]);
 
 export const App = () => {

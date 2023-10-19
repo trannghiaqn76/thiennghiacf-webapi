@@ -1,5 +1,1 @@
-export * from './DefaultLayout';
-export const pages = [
-
-    require('/')['DefaultLayout']
-  ];
+export * from "./DefaultLayout";
