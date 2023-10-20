@@ -1,8 +1,6 @@
 import React from "react";
 import { Row, Col, Form, Carousel, Image } from "antd";
 import styled from "styled-components";
-// import b1 from "images/banner-1.jpg";
-// import b4 from "images/banner-4.jpg";
 import { Link } from "react-router-dom";
 import { info } from "../../../../../root/axios/config";
 interface IProductProps {}
@@ -100,15 +98,15 @@ const _Banner = styled.div`
   font-size: 21px !important;
 }
 `;
-// const contentStyle: React.CSSProperties = {
-//   height: "275px",
-//   background:'white',
-//   color: "#fff",
-//   textAlign: "center",
-//   boxShadow: "0",
-//   objectFit:'fill',
-//   overflow: 'hidden',
-// };
+ const contentStyle: React.CSSProperties = {
+   height: "275px",
+   background:'white',
+   color: "#fff",
+   textAlign: "center",
+   boxShadow: "0",
+   objectFit:'fill',
+   overflow: 'hidden',
+ };
 
 export const BannerComponent = React.memo(
   (props: React.PropsWithChildren<IProductProps>) => {
@@ -121,7 +119,7 @@ export const BannerComponent = React.memo(
             <Col span={24}>
               <Carousel autoplay={true}>
                 <div>
-                  <div style={{}}>
+                <div style={contentStyle}>
                     <Link to="/profile">
                       <Image
                         src={info.bannerImage1}
@@ -131,7 +129,7 @@ export const BannerComponent = React.memo(
                   </div>
                 </div>
                 <div>
-                  <div style={{}}>
+                <div style={contentStyle}>
                     <Link to="/profile">
                       <Image
                         src={info.bannerImage1}
