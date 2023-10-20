@@ -2,3 +2,7 @@
 /.vs/
 .vs/
 /wwwroot/dist/
+/thiennghiacf.model/obj
+/thiennghiacf.model/bin/Debug/net6.0
+/thiennghiacf.service/obj
+/thiennghiacf.service/bin/Debug/net6.0
