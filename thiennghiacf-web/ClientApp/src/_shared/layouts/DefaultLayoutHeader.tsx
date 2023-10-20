@@ -125,7 +125,7 @@ export const DefaultLayoutHeader = (
               }}
             >
               <NavLink to="/cong-dong" className="main-nav">
-                <span className="text-menu">CỘNG ĐỒNG</span>
+                <span className="text-menu">CỘNG ĐỒNG </span>
               </NavLink>
             </li>
             <li
