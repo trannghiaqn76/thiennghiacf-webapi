@@ -1,0 +1,4 @@
+## Ignore Visual Studio temporary file
+/.vs/
+.vs/
+/wwwroot/dist/
