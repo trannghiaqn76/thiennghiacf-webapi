@@ -84,9 +84,8 @@ namespace thiennghiacf_web
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
-            // Authentication & Authorization
-            app.UseAuthentication();
-            app.UseAuthorization();
+           
+            
 
             app.UseStaticFiles(new StaticFileOptions
             {
@@ -95,7 +94,9 @@ namespace thiennghiacf_web
                 RequestPath = "/images"
             });
             app.UseRouting();
-
+            // Authentication & Authorization
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
